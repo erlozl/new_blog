@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상세보기</title>
+    <link rel="stylesheet" href="js/javascript.js">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <nav id="nav">
+                <h3 class="logo">
+                    <a href="#">게시판</a>
+                </h3>
+                <ul class="menu">
+                    <li>
+                        <a href="#">로그인</a>
+                    </li>
+                    <li><a href="#">회원가입</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="common_wrap" id="detail_page">
+            <div id="container">
+                <section class="common_box">
+                    <div class="common_title board_title">
+                        <h1>글 상세보기</h1>
+                    </div>
+                    <div class="board_field">
+                        <ul class="common_field">
+                            <li><label for="title">제목</label></li>
+                            <li><input type="text" id="title" value="첫번째 게시글"></li>
+                        </ul>
+                        <ul class="common_field">
+                            <li><label for="writer">작성자</label></li>
+                            <li><input type="text" id="writer" value="홍길동"></li>
+                        </ul>
+                        <div class="common_area">
+                            <ul class="common_field">
+                                <li><label for="file">첨부파일</label></li>
+                                <li><input type="text" id="file" value="file.png"></li>
+                            </ul>
+                            <div class="action_btn">
+                                <button type="button">파일 선택</button>
+                            </div>
+                        </div>
+                        <ul class="common_field">
+                            <li><span class="span_label">내용</span></li>
+                            <li>
+                                <div class="board_textarea">
+                                    <div class="img_box" id="imgBox"><img src="image/img_02.png" alt="첫번째 게시글 이미지">
+                                    </div>
+                                    <p class="content">게시글 123</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="btn_area">
+                            <li class="delete_btn">
+                                <button type="button">삭제</button>
+                            </li>
+                            <li class="save_btn">
+                                <button type="button">수정</button>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="copyright">
+                Copyright(c)2024 홍길동 All rights reserved.
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
