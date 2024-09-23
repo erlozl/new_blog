@@ -220,7 +220,8 @@ div.save_btn {
 
 /* board_list.html */
 
-#board_page .content_box {
+#board_page .content_box,
+#detail_page .content_box {
   padding-bottom: 24px;
 }
 .board_title {
