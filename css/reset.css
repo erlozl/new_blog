@@ -1,3 +1,5 @@
+/* 초기화 css */
+
 @font-face {
   font-family: "Pretendard-Regular";
   src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
@@ -139,6 +141,7 @@ button {
   outline: none;
   background-color: inherit;
   cursor: pointer;
+  font-size: 16px;
 }
 
 h1 {
@@ -174,23 +177,15 @@ input,
   outline: none;
   border-radius: 3px;
 }
+
+input[type="file"] {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
 a {
   text-decoration: none;
   outline: none;
   color: #000;
-}
-\ .row {
-  display: flex;
-  justify-content: center;
-}
-.row_btwn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }

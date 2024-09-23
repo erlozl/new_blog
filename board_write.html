@@ -10,21 +10,31 @@
 </head>
 
 <body>
+    <!-- wrap -->
     <div id="wrap">
+        <!-- header -->
         <header id="header">
+            <!-- nav -->
             <nav id="nav">
                 <h3 class="logo">
-                    <a href="#">게시판</a>
+                    <span>게시판</span>
                 </h3>
                 <ul class="menu">
+                    <!-- 권한이 없는 경우 -->
                     <li>
-                        <a href="#">로그인</a>
+                        <span>로그인</span>
                     </li>
-                    <li><a href="#">회원가입</a>
+                    <li>
+                        <span>회원가입</span>
+                    </li>
+                    <!-- 권한이 있는 경우 -->
+                    <li>
+                        <span>로그아웃</span>
                     </li>
                 </ul>
             </nav>
         </header>
+        <!-- main -->
         <main class="common_wrap" id="write_page">
             <div id="container">
                 <section class="common_box">
@@ -43,11 +53,12 @@
                         </ul>
                         <div class="common_area">
                             <ul class="common_field">
-                                <li><label for="file">첨부파일</label></li>
-                                <li><input type="text" id="file" placeholder="사진을 등록해주세요."></li>
+                                <li><span class="span_label">첨부파일</span></li>
+                                <li><span class="file_txt">선택된 파일이 없습니다.</span></li>
                             </ul>
                             <div class="action_btn">
-                                <button type="button">파일 선택</button>
+                                <label for="file" placeholder="사진을 등록해주세요." class="file_btn">파일선택</label>
+                                <input type="file" id="file">
                             </div>
                         </div>
                         <ul class="common_field">
@@ -59,12 +70,13 @@
                             </li>
                         </ul>
                         <div class="save_btn">
-                            <button type="button">글쓰기</button>
+                            <button type="button" id="writeBtn">글쓰기</button>
                         </div>
                     </div>
                 </section>
             </div>
         </main>
+        <!-- footer -->
         <footer id="footer">
             <div class="copyright">
                 Copyright(c)2024 홍길동 All rights reserved.

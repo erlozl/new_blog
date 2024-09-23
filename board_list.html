@@ -10,27 +10,38 @@
 </head>
 
 <body>
+    <!-- wrap -->
     <div id="wrap">
+        <!-- header -->
         <header id="header">
+            <!-- nav -->
             <nav id="nav">
                 <h3 class="logo">
-                    <a href="#">게시판</a>
+                    <span>게시판</span>
                 </h3>
                 <ul class="menu">
+                    <!-- 권한이 없는 경우 -->
                     <li>
-                        <a href="#">로그인</a>
+                        <span>로그인</span>
                     </li>
-                    <li><a href="#">회원가입</a>
+                    <li>
+                        <span>회원가입</span>
+                    </li>
+                    <!-- 권한이 있는 경우 -->
+                    <li>
+                        <span>로그아웃</span>
                     </li>
                 </ul>
             </nav>
         </header>
+        <!-- main -->
         <main class="common_wrap" id="board_page">
             <div id="container">
                 <section class="common_box content_box">
                     <div class="common_title board_title">
                         <h1>게시판</h1>
                     </div>
+                    <!-- 게시글이 있을 때  -->
                     <div class="board_area">
                         <ul class="board_box">
                             <li class="board_item">
@@ -152,18 +163,22 @@
                         <li class="next">&gt;</li>
                     </ul>
                     <div class="save_btn">
-                        <button>글쓰기</button>
+                        <button type="button">글쓰기</button>
                     </div>
+
                     <!-- 게시글이 없을 때 -->
+
                     <!-- <ul class="no_board_area">
                         <li>
                             <img src="image/icon_01.svg" alt="조회된 게시글이 없습니다.">
                         </li>
                         <li>조회된 게시글이 없습니다.</li>
                     </ul> -->
+
                 </section>
             </div>
         </main>
+        <!-- footer -->
         <footer id="footer">
             <div class="copyright">
                 Copyright(c)2024 홍길동 All rights reserved.
